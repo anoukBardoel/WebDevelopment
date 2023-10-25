@@ -1,0 +1,11 @@
+.checklist
+{
+    list-style-image: url("../images/unchecked.jpg");
+    line-height: 1.5em;
+    list-style-position: inside;
+}
+.checked
+{
+    list-style-image: url("../images/checked.jpg");
+    line-height: 1.5em;
+}
