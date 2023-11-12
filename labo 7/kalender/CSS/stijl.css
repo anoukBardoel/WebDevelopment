@@ -1,0 +1,31 @@
+thead
+{
+    background-color: rgb(0,102,153,255);
+}
+tbody tr th
+{
+    background-color: rgb(9,25,113,255);
+    color:rgb(9,108,232,255)
+}
+td.grijs
+{
+    background-color:#cccccc;
+    color:#aeafb2;
+}
+tr td:first-child:not(.grijs)
+{
+    background-color: #00ffff;
+}
+tr td:last-child:not(.grijs)
+{
+    background-color: #00ffff;
+}
+#oranje
+{
+   background-color: #ef7a4f;
+}
+tbody tr td
+{
+    border: 1px dotted;
+    border-collapse: collapse;
+}
