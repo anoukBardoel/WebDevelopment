@@ -1,0 +1,8 @@
+div div:first-child, div div:last-child
+{
+    background-color: lightgrey;
+}
+div div
+{
+    background-color: dimgrey;
+}
