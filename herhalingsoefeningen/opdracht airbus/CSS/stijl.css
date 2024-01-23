@@ -1,11 +1,9 @@
-body
-{
+body{
     width: 95%;
-    margin:0px auto;
+    margin: 0 auto;
     font-family: Arial, helvetica, sans-serif;
 }
-header
-{
+header{
     position: relative;
     height: 200px;
     background-image: url("../images/bgsky3.jpg");
@@ -14,60 +12,51 @@ header
     text-align: center;
     color: darkblue;
 }
-header img
-{
-    position: absolute;
-    float: right ;
-    right: 90px;
-    bottom: 60px;
-}
-header h1
-{
+header h1{
     font-size: 3em;
-    font-style: italic;
     font-weight: bold;
-
+    font-style: italic;
 }
-header h2
-{
+header h2{
     font-size: 2.4em;
     font-weight: bold;
 }
-aside
-{
+header img{
+    position: absolute;
     float: right;
+    right: 90px;
+    bottom: 60px;
+}
+aside{
     width: 25%;
+    float: right;
     background-color: #dddddd;
     border: 1px solid #999999;
+    box-sizing: border-box;
     color: #666666;
     font-size: 0.9em;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 10px ;
 }
-aside h3
-{
+aside h3{
     color: white;
     background-color: blue;
+    font-size: 1.2em;
     text-align: center;
 }
-main
-{
+main{
     width: 75%;
     padding-right: 10px;
 }
-.logo
-{
+#logo{
     float: left;
     padding: 20px;
 }
-article
-{
+article{
     text-align: justify;
-    padding: 20px 20px 20px 0;
+    margin: 20px 20px 20px 0;
 }
-article p
-{
-    margin: 0;
+article p{
+    margin: 0px;
 }
 article span
 {
@@ -75,38 +64,21 @@ article span
     font-weight: bold;
     font-style: italic;
 }
-.gallery
-{
+#gallery{
     background-color: #999999;
-    clear: left;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.gallery .foto
+#gallery img
 {
-    display: inline-block;
-    width: 180px;
     height: 180px;
+    width: 180px;
+    border: 1px dotted #999999;
     margin: 20px;
-    border: 1px dotted white;
-    padding: 10px;
-    background-color: white;
 }
-footer
-{
-    clear: both;
+footer{
     background-color: #666666;
     color: white;
-    line-height: 2em;
-}
-.block
-{
-    margin-left: 120px;
-    display: inline-block;
-}
-footer a:hover
-{
-    color: red;
-}
-.copyright
-{
-    text-align: center;
+    font-size: 2em;
 }
