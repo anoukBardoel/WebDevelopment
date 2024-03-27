@@ -44,23 +44,31 @@ const saveColor = () => {
 	let blauw = sliders[2].value;
 	blokje.style.backgroundColor= "rgb(" + rood +"," + groen + ","+blauw+")";
 	knop.addEventListener("click", deleteColor);
-	knop.addEventListener("click", blokje.setAttribute("id", "geselecteerd"))
 	blokje.addEventListener("click", becomeColor);
-	blokje.addEventListener("click", blokje.setAttribute("id", "geselecteerd"))
 }
-const deleteColor = () => {
+const deleteColor = (event) => {
+	let target= event.currentTarget;
 	let div = document.getElementById("lijst");
-	let blokje = document.getElementById("geselecteerd");
+	let blokje = target.parentNode;
 	div.removeChild(blokje);
+	event.stopPropagation();
 }
 
-const becomeColor = () => {
+const becomeColor = (event) => {
+	let blokje = event.currentTarget;
 	let colorDemos=document.getElementsByClassName("colorDemo");
-	let blokje = document.getElementById("geselecteerd");
+	let sliders = document.getElementsByClassName("slider");
+	let kleur = document.getElementsByClassName("kleur")
 	let rood = blokje.getAttribute("data-rood");
+	sliders[0].value = rood;
+	kleur[0].innerHTML = sliders[0].value;
 	let groen = blokje.getAttribute("data-groen");
+	sliders[1].value = groen;
+	kleur[1].innerHTML = sliders[1].value;
 	let blauw = blokje.getAttribute("data-blauw");
+	sliders[2].value = blauw;
+	kleur[2].innerHTML = sliders[2].value;
 	colorDemos[0].style.backgroundColor= "rgb(" + rood +"," + groen + ","+blauw+")";
-	blokje.setAttribute("id","");
 }
+
 window.addEventListener("load", setup);
