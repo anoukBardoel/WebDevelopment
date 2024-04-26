@@ -1,0 +1,20 @@
+.colorDemo {
+	width:100px;
+	height:100px;
+	border:1px solid black;
+}
+#colorPicker{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	width: fit-content;
+}
+#save{
+	float: right;
+}
+#lijst{
+	display: flex;
+
+}
+#lijst div button{
+	float: right;
+}

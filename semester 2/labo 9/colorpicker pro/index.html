@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Demonstratie slider</title>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body>
+<section id="colorPicker">
+	<section>
+		<div>
+			<input type="range" class="slider" value="50" min="0" max="255" />
+			red <span id="rood" class="kleur">50</span>
+		</div>
+		<div>
+			<input type="range" class="slider" value="50" min="0" max="255" />
+			green <span id="groen" class="kleur">50</span>
+		</div>
+		<div>
+			<input type="range" class="slider" value="50" min="0" max="255" >blue <span id="blauw" class="kleur">50</span>
+		</div>
+	</section>
+	<section class="blokje">
+		<div class="colorDemo" />
+		<button id="save">save</button>
+	</section>
+</section>
+<section id="lijst">
+</section>
+<script src="scripts/code.js"></script>
+</body> 
+</html> 
